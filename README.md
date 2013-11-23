@@ -10,9 +10,9 @@ If you don't have a UserApp account, you need to [create one](https://app.userap
 
 *  **Token**: A token authenticates a user on your app. If you want to create a token for your logged in user, [follow this guide](https://help.userapp.io/customer/portal/articles/1364103-how-do-i-create-an-api-token-). If you want to authenticate using a username/password, you can acquire your token by calling `api.User.Login(...);`
 
-### Adding a NuGet reference
+### Referencing the library
 
-Add the NuGet reference [UserApp](https://www.nuget.org/packages/UserApp/). If you're unfamiliar with adding NuGet references, read more about it here: [http://docs.nuget.org/docs/start-here/Managing-NuGet-Packages-Using-The-Dialog](http://docs.nuget.org/docs/start-here/Managing-NuGet-Packages-Using-The-Dialog)
+To reference the library you need to add [UserApp](https://www.nuget.org/packages/UserApp/) using NuGet. If you're unfamiliar with adding NuGet references, read more about it here: [http://docs.nuget.org/docs/start-here/Managing-NuGet-Packages-Using-The-Dialog](http://docs.nuget.org/docs/start-here/Managing-NuGet-Packages-Using-The-Dialog)
 
 ### Creating your first client
 
