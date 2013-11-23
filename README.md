@@ -20,14 +20,14 @@ Add the NuGet reference [UserApp](https://www.nuget.org/packages/UserApp/). If y
 
 #### Additional ways of creating a client
 
-If you want to create a client with additional options  the easiest way is to pass an array with the options as shown below.
+If you want to create a client with additional options  the easiest way is to pass an *anonymous object* with the options as shown below.
 
     dynamic api = new UserApp.API(new {
         Debug = true,
         ThrowErrors = false
     });
 
-If you pass a string value into the constructor the first argument will be treated as the `App Id`, the second as the `Token`. If you pass an *array* then it will always be treated as additional options. I.e. some valid constructs are:
+If you pass a string value into the constructor the first argument will be treated as the `App Id`, the second as the `Token`. If you pass an *anonymous object* then it will always be treated as additional options. I.e. some valid constructs are:
 
 	dynamic api = new UserApp.API("MY APP ID");
 #
