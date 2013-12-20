@@ -258,6 +258,10 @@ Is exactly the same as:
 	
 	api.User.Logout();
 	api.GetOptions().Token = null;
+	
+## Code Convention Magic
+
+To improve language integration, this library automatically translates naming conventions between the C# and UserApp  domain. I.e. even though the UserApp docs state `user.paymentMethod.get` argument `user_id`, this library is able to accept it as `User.PaymentMethod.Get` argument `UserId`. This also applies to objects. So if the UserApp docs state that a object has the property `first_name` it can be accessed as `FirstName` (i.e. user.FirstName).
 
 ## Dependencies
 
