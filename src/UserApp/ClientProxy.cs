@@ -91,7 +91,7 @@ namespace UserApp
             var convention = this._client.GetOptions().CodeConvention;
             var name = convention.ConvertServiceName(binder.Name) ?? "";
 
-            if (this._serviceName == null && name.Length >= 2 && name[0] == 'v')
+            if (this._serviceName == null && name.Length >= 2 && char.ToLowerInvariant(name[0]) == 'v')
             {
                 int parsedVersion;
                 if (Int32.TryParse(name.Substring(1), out parsedVersion))

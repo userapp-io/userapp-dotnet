@@ -50,6 +50,7 @@
     <Compile Include="Client.cs" />
     <Compile Include="ClientBase.cs" />
     <Compile Include="ClientOptions.cs" />
+    <Compile Include="CodeConventions\ObjectAccessDecorator.cs" />
     <Compile Include="CodeConventions\CSharpCodeConvention.cs" />
     <Compile Include="CodeConventions\ICodeConvention.cs" />
     <Compile Include="Core\DateTimeUtility.cs" />

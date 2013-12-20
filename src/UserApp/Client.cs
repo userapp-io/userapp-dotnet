@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using JsonFx.Json;
+using UserApp.CodeConventions;
 using UserApp.Core;
 using UserApp.Exceptions;
 
@@ -79,7 +80,14 @@ namespace UserApp
             }
 
             var result = ProcessContentType(response.Headers["Content-Type"], response.Body);
+            
+            if(result == null)
+            {
+                return null;
+            }
+
             var expandoObject = result as IDictionary<string, Object>;
+            var resultIsArray = ((Type)result.GetType()).IsArray;
 
             if (expandoObject != null)
             {
@@ -121,7 +129,7 @@ namespace UserApp
                     }
                 }
             }
-            else if (((Type)result.GetType()).IsArray && this.DebugMode())
+            else if (resultIsArray && this.DebugMode())
             {
                 var expandoObjects = result as IDictionary<string, Object>[];
                 if (expandoObjects != null)
@@ -146,6 +154,40 @@ namespace UserApp
             if (generatedException != null)
             {
                 throw generatedException;
+            }
+
+            if (options.CodeConvention != null)
+            {
+                if (result is ExpandoObject)
+                {
+                    result = new ObjectAccessDecorator(options.CodeConvention, (ExpandoObject)result);
+                }
+                else if (resultIsArray)
+                {
+                    var resultArray = result as object[];
+                    var newResultArray = new object[resultArray.Length];
+
+                    for (var i = 0; i < resultArray.Length; ++i)
+                    {
+                        var item = resultArray[i];
+
+                        if (item == null)
+                        {
+                            continue;
+                        }
+
+                        var itemType = item.GetType();
+
+                        if (itemType == typeof(ExpandoObject))
+                        {
+                            item = new ObjectAccessDecorator(options.CodeConvention, (ExpandoObject)item);
+                        }
+
+                        newResultArray[i] = item;
+                    }
+
+                    result = newResultArray;
+                }
             }
 
             return result;

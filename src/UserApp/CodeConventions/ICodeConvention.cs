@@ -13,6 +13,7 @@ namespace UserApp.CodeConventions
     {
         string ConvertServiceName(string serviceName);
         string ConvertMethodName(string methodName);
+        string ConvertPropertyName(string propertyName);
         string ConvertArgumentName(string argumentName);
     }
 }

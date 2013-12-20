@@ -21,6 +21,11 @@ namespace UserApp.CodeConventions
             return ApplyCamelCaseFormat(methodName);
         }
 
+        public string ConvertPropertyName(string methodName)
+        {
+            return ApplyLowercaseAndUnderscoreFormat(methodName);
+        }
+
         public string ConvertArgumentName(string argumentName)
         {
             return ApplyLowercaseAndUnderscoreFormat(argumentName);
@@ -30,11 +35,16 @@ namespace UserApp.CodeConventions
         {
             var result = new StringBuilder(value.Length * 2);
 
-            foreach (var character in value)
+            for (var i=0;i<value.Length;++i)
             {
+                var character = value[i];
+
                 if (character == Char.ToUpperInvariant(character))
                 {
-                    result.Append('_');
+                    if (i != 0)
+                    {
+                        result.Append('_');
+                    }
                     result.Append(char.ToLowerInvariant(character));
                 }
                 else
