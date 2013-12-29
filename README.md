@@ -196,7 +196,7 @@ Sometimes to debug an API error it's important to see what is being sent/recieve
 
 ### Catching errors
 
-When the option `throw_errors` is set to `true` (default) the client will automatically throw a `\UserApp\Exceptions\ServiceException` exception when a call results in an error. I.e.
+When the option `ThrowErrors` is set to `true` (default) the client will automatically throw a `UserApp.Exceptions.ServiceException` exception when a call results in an error. I.e.
 
 	try
     {
