@@ -229,13 +229,13 @@ Setting `ThrowErrors` to `false` is more of a way to tell the client to be silen
 
 1. Set the client option `Debug` to `true` (see section *options* for more details on setting client options). If no logger is set, this automatically adds a MemoryLogger to your API client. The logger is retrievable using `api.GetOptions().Logger`.
 2. Like above, set the option `ThrowErrors` to `false`. This disables any error exceptions (`UserApp.Exceptions.ServiceException`) being thrown.
-3. Make the API calls that you want to debug. E.g. `api.User.Login(login: "test");`
+3. Make the API calls that you want to debug. E.g. `api.User.Login(login: "test");`.
 4. Print the logs! See the section `Debugging`.
 5. Stuck? Send the output to [support@userapp.io](mailto:support@userapp.io) and we'll help you out.
 
 ## Special cases
 
-Even though this client works as a proxy and there are no hard-coded API definitions built into it. There are still a few tweaks that are API specific.
+Even though this client works as a proxy and there are no hard-coded API definitions built into it, there are still a few tweaks that are API specific.
 
 #### Calling API `user.login` will automatically set the client token
 
