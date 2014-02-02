@@ -41,26 +41,26 @@ If you pass a string value into the constructor the first argument will be treat
 
 ## Calling services and methods
 
-This client has no hard-coded API definitions built into it. It merly acts as a proxy which means that you'll never have to update the client once new API methods are released. If you want to call a service/method all you have to do is look at the [API documentation](https://app.userapp.io/#/docs/) and follow the convention below:
+This client has no hard-coded API definitions built into it. It merly acts as a proxy which means that you'll never have to update the client once new API methods are released or changed. If you want to call a method all you have to do is look at the [API documentation](https://app.userapp.io/#/docs/) and follow the convention below:
 
     dynamic result = api.[Service].[Method](argument: value, otherArgument: "otherValue");
 
 #### Some examples
 
-The API [`user.login`](https://app.userapp.io/#/docs/user/#login) and it's arguments `login` and `password` translates to:
+The API [`user.login`](https://app.userapp.io/#/docs/user/#login) and its arguments `login` and `password` translates to:
 
     var loginResult = api.User.Login(
         login: "test",
         password: test"
     );
 
-The API [`user.invoice.search`](https://app.userapp.io/#/docs/invoice/#search) and it's argument `user_id` translates to:
+The API [`user.invoice.search`](https://app.userapp.io/#/docs/invoice/#search) and its argument `user_id` translates to:
 
     var invoices = api.User.Invoice.Search(
         userId: "test123"
     );
 
-The API [`property.save`](https://app.userapp.io/#/docs/property/#save) and it's arguments `name`, `type` and `default_value` translates to:
+The API [`property.save`](https://app.userapp.io/#/docs/property/#save) and its arguments `name`, `type` and `default_value` translates to:
 
     var property = api.Property.Save(
         name: "my new property",
