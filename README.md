@@ -20,7 +20,7 @@ To reference the library you need to add [UserApp](https://www.nuget.org/package
 
 #### Additional ways of creating a client
 
-If you want to create a client with additional options  the easiest way is to pass an *anonymous object* with the options as shown below.
+If you want to create a client with additional options the easiest way is to pass an *anonymous object* with the options as shown below.
 
     dynamic api = new UserApp.API(new {
         Debug = true,
