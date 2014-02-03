@@ -213,7 +213,7 @@ When the option `ThrowErrors` is set to `true` (default) the client will automat
         }
 	}
 
-Setting `ThrowErrors` to `false` is more of a way to tell the client to be silent. This will not throw any service specific exceptions. Though, it might throw a `UserApp.Exceptions.UserAppException`, `UserApp.Exceptions.InvalidServiceException` or `UserApp.Exceptions.InvalidMethodException`.
+Setting `ThrowErrors` to `false` is more of a way to tell the client to be silent. This will not throw any service specific exceptions. Though, it might throw a `UserApp.Exceptions.UserAppException`, `UserApp.Exceptions.InvalidServiceException`, or `UserApp.Exceptions.InvalidMethodException`.
 
     var result = api.User.Save(userId: "invalid user id");
 
