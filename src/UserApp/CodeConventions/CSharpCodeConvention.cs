@@ -39,7 +39,7 @@ namespace UserApp.CodeConventions
             {
                 var character = value[i];
 
-                if (character == Char.ToUpperInvariant(character))
+                if (character != '_' && character == Char.ToUpperInvariant(character))
                 {
                     if (i != 0)
                     {

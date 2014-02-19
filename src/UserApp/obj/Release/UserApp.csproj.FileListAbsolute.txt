@@ -1,0 +1,9 @@
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\bin\Release\UserApp.dll
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\bin\Release\UserApp.pdb
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\bin\Release\EasyHttp.dll
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\bin\Release\JsonFx.dll
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\bin\Release\EasyHttp.pdb
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\bin\Release\JsonFx.xml
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\obj\Release\UserApp.csprojResolveAssemblyReference.cache
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\obj\Release\UserApp.dll
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\UserApp\obj\Release\UserApp.pdb

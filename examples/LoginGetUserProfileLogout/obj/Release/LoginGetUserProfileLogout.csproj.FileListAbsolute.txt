@@ -1,0 +1,12 @@
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\LoginGetUserProfileLogout.exe.config
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\LoginGetUserProfileLogout.exe
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\LoginGetUserProfileLogout.pdb
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\UserApp.dll
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\JsonFx.dll
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\EasyHttp.dll
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\UserApp.pdb
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\JsonFx.xml
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\bin\Release\EasyHttp.pdb
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\obj\Release\LoginGetUserProfileLogout.csprojResolveAssemblyReference.cache
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\obj\Release\LoginGetUserProfileLogout.exe
+C:\Users\Robin\Documents\GitHub\userapp-dotnet\src\LoginGetUserProfileLogout\obj\Release\LoginGetUserProfileLogout.pdb
