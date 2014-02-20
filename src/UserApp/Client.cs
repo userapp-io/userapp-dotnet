@@ -18,6 +18,12 @@ namespace UserApp
         private readonly JsonWriter _jsonWriter = new JsonWriter();
         private readonly JsonReader _jsonReader = new JsonReader();
 
+        public Client(string appId, string token)
+        {
+            this.GetOptions().AppId = appId;
+            this.GetOptions().Token = token;
+        }
+
         public Client(string appId, object options = null)
         {
             this.GetOptions().AppId = appId;

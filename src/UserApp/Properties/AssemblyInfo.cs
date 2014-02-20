@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("UserApp")]
 [assembly: AssemblyDescription("Library for connection your application to UserApp.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("UserApp (www.userapp.io)")]
-[assembly: AssemblyProduct("UserApp")]
-[assembly: AssemblyCopyright("Copyright ©  2014")]
+[assembly: AssemblyCompany("UserApp, Inc.")]
+[assembly: AssemblyProduct("UserApp (www.userapp.io)")]
+[assembly: AssemblyCopyright("Copyright UserApp ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.7.0")]
-[assembly: AssemblyFileVersion("1.0.7.0")]
+[assembly: AssemblyVersion("1.0.10.0")]
+[assembly: AssemblyFileVersion("1.0.10.0")]

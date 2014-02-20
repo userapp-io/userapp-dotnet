@@ -15,10 +15,15 @@ namespace UserApp
         private readonly Client _client;
         private readonly string _serviceName;
         private readonly int _serviceVersion = 1;
-        
+
         public ClientProxy(string appId, object options = null)
         {
             this._client = new Client(appId, options);
+        }
+
+        public ClientProxy(string appId, string token)
+        {
+            this._client = new Client(appId, token);
         }
 
         public ClientProxy(string appId, string token, object options = null)

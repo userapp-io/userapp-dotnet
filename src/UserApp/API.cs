@@ -13,6 +13,9 @@ namespace UserApp
         public API(string appId, object options = null)
             : base(appId, options) {}
 
+        public API(string appId, string token)
+            : base(appId, token) {}
+
         public API(string appId, string token, object options = null)
             : base(appId, token, options) {}
 

@@ -78,10 +78,13 @@ namespace UserApp.CodeConventions
             if (sourceType.IsArray)
             {
                 var resultArray = source as object[];
+                var newArrayResult = new dynamic[resultArray.Length];
 
                 for (var i = 0; i < resultArray.Length; ++i)
                 {
                     var item = resultArray[i];
+
+                    newArrayResult[i] = item;
 
                     if (item == null)
                     {
@@ -97,11 +100,11 @@ namespace UserApp.CodeConventions
 
                     if (itemType == typeof(ExpandoObject))
                     {
-                        resultArray[i] = this.Decorate(item);
+                        newArrayResult[i] = this.Decorate(item);
                     }
                 }
 
-                source = resultArray;
+                source = newArrayResult;
             }
 
             if (source is ObjectAccessDecorator)
