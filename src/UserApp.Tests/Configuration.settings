@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="UserApp.Tests" GeneratedClassName="Configuration">
+  <Profiles />
+  <Settings>
+    <Setting Name="TestAppId" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">51ded0be98035</Value>
+    </Setting>
+    <Setting Name="TestUserLogin" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">test</Value>
+    </Setting>
+    <Setting Name="TestBaseAddress" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">userapp.dev.local</Value>
+    </Setting>
+    <Setting Name="TestUserPassword" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">test12345</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

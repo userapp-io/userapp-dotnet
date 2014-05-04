@@ -1,1 +1,0 @@
-C:\Users\Robin\Documents\GitHub\userapp-dotnet\examples\LoginGetUserProfileLogout\bin\Debug\LoginGetUserProfileLogout.exe.config

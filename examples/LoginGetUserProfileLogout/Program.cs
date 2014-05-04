@@ -10,20 +10,22 @@ namespace LoginGetUserProfileLogout
     {
         static void Main(string[] args)
         {
-            dynamic api = new UserApp.ClientProxy("YOUR APP ID");
+            dynamic api = new UserApp.API("51ded0be98035", new {BaseAddress="dev-api.userapp.io", ThrowErrors = true});
 
             var result = api.User.Login(
-                login: "LOGIN OF USER",
-                password: "PASSWORD OF USER"
+                login: "root",
+                password: "test"
             );
 
-            var user = api.User.Get()[0];
+            var user = api.User.Get();
 
-            Console.WriteLine("FirstName={0}, LastName={1}", user.FirstName, user.LastName);
+            /*Console.WriteLine("FirstName={0}, LastName={1}", user.FirstName, user.LastName);
             Console.WriteLine("Login={0}", user.Login);
             Console.WriteLine("Email={0}", user.Email);
 
-            api.User.Logout();
+            api.User.Logout();*/
+
+            var dss = user;
 
             Console.ReadLine();
         }

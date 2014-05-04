@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace UserApp.CodeConventions
 {
     [DebuggerTypeProxy(typeof(DebuggerProxyView))]
-    public class ObjectAccessDecorator : DynamicObject
+    public class ObjectAccessDecorator : DynamicObject, IEnumerable<KeyValuePair<string, object>>
     {
         private readonly ICodeConvention _convention;
         private readonly IDictionary<string, object> _source;
@@ -26,6 +26,11 @@ namespace UserApp.CodeConventions
 
             if (!hasIndex)
             {
+                if(indexes.Length == 1 && this._source.ContainsKey(indexes[0] as string))
+                {
+                    result = this._source[indexes[0] as string];
+                    return true;
+                }
                 return false;
             }
 
@@ -219,6 +224,16 @@ namespace UserApp.CodeConventions
             {
                 throw new NotImplementedException();
             }
+        }
+
+        public IEnumerator<KeyValuePair<string, object>> GetEnumerator()
+        {
+            return this._source.GetEnumerator();
+        }
+
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        {
+            return this._source.GetEnumerator();
         }
     }
 }
