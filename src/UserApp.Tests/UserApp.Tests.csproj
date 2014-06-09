@@ -64,6 +64,7 @@
       <DependentUpon>Configuration.settings</DependentUpon>
     </Compile>
     <Compile Include="CSharpCodeConventionTests.cs" />
+    <Compile Include="ObjectAccessDecoratorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceIntegrationTests.cs" />
     <Compile Include="UserIntegrationTests.cs" />

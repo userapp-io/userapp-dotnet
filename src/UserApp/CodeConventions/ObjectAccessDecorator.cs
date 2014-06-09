@@ -43,6 +43,26 @@ namespace UserApp.CodeConventions
             return true;
         }
 
+        public override bool TrySetMember(SetMemberBinder binder, object value)
+        {
+            var propertyName = this._convention.ConvertPropertyName(binder.Name);
+
+            value = this.Decorate(value);
+            this._source[propertyName]=value;
+
+            return true;
+        }
+
+        public override bool TrySetIndex(SetIndexBinder binder, object[] indexes, object value)
+        {
+            var propertyName = this._convention.ConvertPropertyName(indexes[0] as string);
+
+            value = this.Decorate(value);
+            this._source[propertyName] = value;
+
+            return true;
+        }
+
         public override bool TryGetMember(GetMemberBinder binder, out object result)
         {
             var propertyName = this._convention.ConvertPropertyName(binder.Name);
